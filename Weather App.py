@@ -3,7 +3,7 @@ from tkinter import messagebox, simpledialog, scrolledtext
 import requests, json, os, datetime, logging
 from collections import defaultdict, Counter
 
-# ---------------------- Account Management ----------------------
+# Account Management
 
 USER_FILE = "users.json"
 LOG_FILE = "weather_app.log"
@@ -57,7 +57,7 @@ def login():
     else:
         messagebox.showerror("Login Failed", "Invalid username or password.")
 
-# ---------------------- Weather Application ----------------------
+# -Weather Application 
 
 def fetch(url, params):
     try:
@@ -189,7 +189,7 @@ def open_weather_app(username):
 
     root.mainloop()
 
-# ---------------------- Login GUI ----------------------
+# Login GUI 
 
 login_window = tk.Tk()
 login_window.title("User Login")
